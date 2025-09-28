@@ -28,7 +28,7 @@ const Home = ({ addToCart, buyNow }) => {
                         </div>
                     </div>
                     <div className="flex-1 mt-10 md:mt-0">
-                        <img src="https://in.canon/media/image/2023/02/05/670f629d880442be8524f2e35fa2f9b1_Movie+Digital+IS.jpghttps://in.canon/media/image/2023/02/05/670f629d880442be8524f2e35fa2f9b1_Movie+Digital+IS.jpg" alt="Camera Hero" className="rounded-lg shadow-lg" />
+                        <img src="https://in.canon/media/image/2023/02/05/670f629d880442be8524f2e35fa2f9b1_Movie+Digital+IS.jpg" alt="Camera Hero" className="rounded-lg shadow-lg" />
                     </div>
                 </div>
             </section>
