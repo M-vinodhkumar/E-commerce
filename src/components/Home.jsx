@@ -3,7 +3,7 @@ import { FaCamera, FaVideo, FaCogs, FaCompactDisc } from "react-icons/fa";
 
 const Home = ({ addToCart, buyNow }) => {
     const products = [
-        { id: 1, name: "Canon EOS R50", price: 999.0, image: "/src/components/images/Canon.png", Description: "Canon EOS R50 24.2MP Mirrorless Camera (18-45 mm Lens, 5-Axis Electronic Image Stabilization)" },
+        { id: 1, name: "Canon EOS R50", price: 999.0, image: "https://in.canon/media/image/2023/02/06/c83adfc2fcaf473f9935b6962f114b45_EOS+R50+Black+RF-S18-45mm.png", Description: "Canon EOS R50 24.2MP Mirrorless Camera (18-45 mm Lens, 5-Axis Electronic Image Stabilization)" },
         { id: 2, name: "Sony A7 III", price: 1499.0, image: "/src/components/images/303425_0_Xo4POLg9J.webp",Description: "SONY Alpha 6700M 26MP Mirrorless Camera (18-135 mm Lens, 23.3 x 15.5 mm Sensor, BIONZ XR Image Processor)" },
         { id: 3, name: "Nikon 50mm f/1.8", price: 199.0, image: "/src/components/images/312192_cwlo5r.webp",Description: "Nikon Z 50II 20.9MP Mirrorless Camera (16-50 mm and 50-250 mm Lens, 23.5 x 15.7 mm Sensor, TFT Touch Sensitive LCD)" },
         { id: 4, name: "Action Camera", price: 299.0, image: "/src/components/images/308770_zbnrsa.webp",Description: "GoPro Hero 4K and 12MP 60 FPS Waterproof Action Camera with Rear LCD Touchscreen (Black)" },
