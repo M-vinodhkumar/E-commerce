@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react"
 import { FaShoppingCart, FaBars, FaTimes, FaCamera, FaChevronDown } from "react-icons/fa";
 import { auth, provider } from "/src/firebase.js";
 import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
