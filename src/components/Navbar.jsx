@@ -1,12 +1,7 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
 import { FaShoppingCart, FaBars, FaTimes, FaCamera, FaChevronDown } from "react-icons/fa";
 import { auth, provider } from "/src/firebase.js";
 import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
-
-
-
-
-
 
 const Navbar = ({ cart, onCartClick, onSearch }) => {
     const [searchText, setSearchText] = useState("");
@@ -89,8 +84,6 @@ const Navbar = ({ cart, onCartClick, onSearch }) => {
                             Contact
                         </a>
                     </li>
-
-
                 </ul>
 
                 {/* Cart + Auth */}
@@ -106,12 +99,18 @@ const Navbar = ({ cart, onCartClick, onSearch }) => {
                         <div className="flex items-center space-x-2">
                             <img src={user.photoURL} alt="user" className="w-8 h-8 rounded-full border-2 border-yellow-400" />
                             <span>{user.displayName}</span>
-                            <button onClick={handleLogout} className="bg-yellow-400 text-black px-3 py-1 rounded-md hover:bg-yellow-500">
+                            <button
+                                onClick={handleLogout}
+                                className="bg-yellow-400 text-black px-3 py-1 rounded-md hover:bg-yellow-500"
+                            >
                                 Logout
                             </button>
                         </div>
                     ) : (
-                        <button onClick={handleLogin} className="bg-yellow-400 text-black px-3 py-1 rounded-md hover:bg-yellow-500">
+                        <button
+                            onClick={handleLogin}
+                            className="bg-yellow-400 text-black px-3 py-1 rounded-md hover:bg-yellow-500"
+                        >
                             Login
                         </button>
                     )}
@@ -138,8 +137,7 @@ const Navbar = ({ cart, onCartClick, onSearch }) => {
                                     <FaChevronDown className="transition-transform group-open:rotate-180" />
                                 </summary>
                                 <ul className="pl-4 mt-2 space-y-2 text-base">
-                                    <li className="px-4 py-2 hover:bg-yellow-400 hover:text-black cursor-pointer">DSLR
-                                    </li>
+                                    <li className="px-4 py-2 hover:bg-yellow-400 hover:text-black cursor-pointer">DSLR</li>
                                     <li className="hover:text-yellow-400 cursor-pointer">Mirrorless</li>
                                     <li className="hover:text-yellow-400 cursor-pointer">Lenses</li>
                                     <li className="hover:text-yellow-400 cursor-pointer">Accessories</li>
@@ -155,12 +153,18 @@ const Navbar = ({ cart, onCartClick, onSearch }) => {
                             <div className="flex items-center space-x-3">
                                 <img src={user.photoURL} alt="user" className="w-8 h-8 rounded-full border-2 border-yellow-400" />
                                 <span>{user.displayName}</span>
-                                <button onClick={handleLogout} className="bg-yellow-400 text-black px-3 py-1 rounded-md hover:bg-yellow-500">
+                                <button
+                                    onClick={handleLogout}
+                                    className="bg-yellow-400 text-black px-3 py-1 rounded-md hover:bg-yellow-500"
+                                >
                                     Logout
                                 </button>
                             </div>
                         ) : (
-                            <button onClick={handleLogin} className="bg-yellow-400 text-black px-3 py-1 rounded-md hover:bg-yellow-500">
+                            <button
+                                onClick={handleLogin}
+                                className="bg-yellow-400 text-black px-3 py-1 rounded-md hover:bg-yellow-500"
+                            >
                                 Login
                             </button>
                         )}
